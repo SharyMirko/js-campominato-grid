@@ -52,3 +52,7 @@ main {
     height: 50px;
     width: 50px;
 }
+
+.clicked {
+    background-color: blue;
+}

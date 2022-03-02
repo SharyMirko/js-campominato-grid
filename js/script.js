@@ -8,23 +8,38 @@ con difficoltà 3 => tra 1 e 49
 const eleLevel = document.querySelector('#level-difficulty');
 const eleBtnPlay = document.querySelector('.play');
 const eleCellContainer = document.querySelector('#cell-container');
-const eleCell = document.querySelectorAll('.cell');
 
-eleBtnPlay.addEventListener('click', function(){
+
+eleBtnPlay.addEventListener('click', generateGrid)
+function generateGrid(){
     let level = eleLevel.value;
     console.log(level);
     eleCellContainer.innerHTML = ''
     if (level == 'normal') {
         for (i = 1; i < 101; i++) {
-            eleCellContainer.innerHTML += `<div class="cell">${i}</div>`
+            eleCellContainer.innerHTML += `<div class="cell">${i}</div>`;
         }
+        
+
     } else if (level == 'hard') {
         for (i = 1; i < 81; i++) {
             eleCellContainer.innerHTML += `<div class="cell">${i}</div>`
         }
+        
+
     } else {
         for (i = 1; i < 51; i++) {
             eleCellContainer.innerHTML += `<div class="cell">${i}</div>`
         }
     }
-})
+    eleCell = document.querySelectorAll('.cell')
+    play();
+}
+
+function play(){
+   eleCell.forEach(element => {
+       element.addEventListener('click', function(){
+           element.classList.add("clicked");
+       })
+   });
+}
