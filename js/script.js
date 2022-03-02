@@ -8,10 +8,12 @@ con difficoltà 3 => tra 1 e 49
 const eleLevel = document.querySelector('#level-difficulty');
 const eleBtnPlay = document.querySelector('.play');
 const eleCellContainer = document.querySelector('#cell-container');
+const eleCell = document.querySelectorAll('.cell');
 
 eleBtnPlay.addEventListener('click', function(){
     let level = eleLevel.value;
     console.log(level);
+    eleCellContainer.innerHTML = ''
     if (level == 'normal') {
         for (i = 1; i < 101; i++) {
             eleCellContainer.innerHTML += `<div class="cell">${i}</div>`
