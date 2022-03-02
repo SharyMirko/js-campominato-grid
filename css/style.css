@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Architects Daughter', cursive, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+label {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+select {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.play {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1em;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: aquamarine;
+    width: 520px;
+}
+
+.cell {
+    background-color: brown;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+}
