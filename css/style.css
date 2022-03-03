@@ -42,7 +42,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: aquamarine;
     width: 520px;
 }
 
@@ -51,6 +50,15 @@ main {
     border: 1px solid black;
     height: 50px;
     width: 50px;
+}
+
+.insane {
+    height: 64px;
+    width: 64px;
+}
+.hard {
+    height: 55px;
+    width: 55px;
 }
 
 .clicked {

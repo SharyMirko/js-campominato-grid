@@ -22,14 +22,14 @@ function generateGrid(){
         
 
     } else if (level == 'hard') {
-        for (i = 1; i < 81; i++) {
-            eleCellContainer.innerHTML += `<div class="cell">${i}</div>`
+        for (i = 1; i < 82; i++) {
+            eleCellContainer.innerHTML += `<div class="cell hard">${i}</div>`
         }
         
 
     } else {
-        for (i = 1; i < 51; i++) {
-            eleCellContainer.innerHTML += `<div class="cell">${i}</div>`
+        for (i = 1; i < 50; i++) {
+            eleCellContainer.innerHTML += `<div class="cell insane">${i}</div>`
         }
     }
     eleCell = document.querySelectorAll('.cell')
